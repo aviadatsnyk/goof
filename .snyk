@@ -1,0 +1,32 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  'npm:ejs:20161128':
+    - ejs-locals > ejs:
+        reason: No upgrade or patch available
+        expires: '2018-02-21T14:44:48.222Z'
+  'npm:ejs:20161130':
+    - ejs-locals > ejs:
+        reason: No upgrade or patch available
+        expires: '2018-02-21T14:44:48.223Z'
+  'npm:ejs:20161130-1':
+    - ejs-locals > ejs:
+        reason: No upgrade or patch available
+        expires: '2018-02-21T14:44:48.223Z'
+  'npm:mime:20170907':
+    - tap > codecov.io > request > form-data > mime:
+        reason: No upgrade or patch available
+        expires: '2018-02-21T14:44:48.223Z'
+  'npm:qs:20170213':
+    - tap > codecov.io > request > qs:
+        reason: No upgrade or patch available
+        expires: '2018-02-21T14:44:48.223Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - tap > codecov.io > request > hawk:
+        patched: '2018-01-22T14:44:48.234Z'
+  'npm:request:20160119':
+    - tap > codecov.io > request:
+        patched: '2018-01-22T14:44:48.234Z'
